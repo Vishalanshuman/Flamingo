@@ -72,6 +72,6 @@ The script collects details in the following format:
 ## Notes
 
 - The script assumes the webpage structure remains consistent. If the website layout changes, you may need to modify the notebook.
-- The Dell website might implement bot protection measures such as CAPTCHA, which could prevent scraping. In such cases, consider using tools like Selenium for dynamic content.
+
 
 
