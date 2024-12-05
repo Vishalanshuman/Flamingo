@@ -19,18 +19,27 @@ Ensure you have the following Python libraries installed:
 - `requests`
 - `beautifulsoup4`
 - `ipykernel`
+- `notebook`
 
-Install the dependencies using pip:
+## Setting Up the Virtual Environment
 
-```bash
-pip install requests beautifulsoup4 ipykernel
-```
-
-You will also need Jupyter Notebook or JupyterLab to run the `.ipynb` file.
-
-```bash
-pip install notebook
-```
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+2. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+3. Install the dependencies:
+   ```bash
+   pip install requests beautifulsoup4 ipykernel notebook
+   ```
 
 ## How It Works
 
@@ -44,12 +53,13 @@ pip install notebook
 
 ## How to Run
 
-1. Open the Jupyter Notebook (`laptop_scrap.ipynb`) in your Jupyter environment:
+1. Activate your virtual environment (see the steps above).
+2. Open the Jupyter Notebook (`laptop_scrap.ipynb`) in your Jupyter environment:
    ```bash
    jupyter notebook laptop_scrap.ipynb
    ```
-2. Execute the cells sequentially to run the scraper.
-3. The extracted laptop details will be displayed at the end of the notebook.
+3. Execute the cells sequentially to run the scraper.
+4. The extracted laptop details will be displayed at the end of the notebook.
 
 ## Example Output
 
@@ -72,6 +82,3 @@ The script collects details in the following format:
 ## Notes
 
 - The script assumes the webpage structure remains consistent. If the website layout changes, you may need to modify the notebook.
-
-
-
